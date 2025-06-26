@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-container">
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="The Coffeen logo" class="logo">
+      </a>
+    </div>
+    <h1 class="site-title">The Coffeen</h1>
+  </header>
+
+  <main class="site-content">
+    {{ content }}
+  </main>
+</body>
+</html>
