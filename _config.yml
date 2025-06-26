@@ -1,6 +1,6 @@
 title: The Coffeen
 description: A cozy blog about code, coffee, and creativity.
-baseurl: ""
-url: "https://sean-o-donoghue.github.io/thecoffeen"
+baseurl: "/thecoffeen"
+url: "https://sean-o-donoghue.github.io"
 plugins:
   - jekyll-feed
