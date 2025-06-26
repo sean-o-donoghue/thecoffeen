@@ -1,22 +1,24 @@
-body {
-  font-family: 'Georgia', serif;
-  background-color: #f9f5f0;
-  margin: 0;
-  padding: 0;
-  color: #3e2c1c;
-}
-
 .site-header {
-  display: flex;
-  align-items: center;
-  padding: 1rem 2rem;
   background-color: #f9f5f0;
   border-bottom: 2px solid #e2c9a0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 0.5rem 2rem;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .logo-container {
-  margin-right: 1rem;
+  flex: 1;
 }
 
 .logo {
@@ -24,9 +26,12 @@ body {
   width: auto;
   display: inline-block;
   object-fit: contain;
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
+}
+
+.nav-bar {
+  flex: 2;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-links {
@@ -51,17 +56,9 @@ body {
   background-color: #4e2e1a;
 }
 
-.nav-bar {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-}
-
-.site-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}.site-title {
+.site-title {
+  flex: 1;
+  text-align: right;
   font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 0.05em;
