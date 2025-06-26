@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #fff8ee;
+  background-color: #f9f5f0;
   border-bottom: 2px solid #e2c9a0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
@@ -20,13 +20,13 @@ body {
 }
 
 .logo {
-  height: 30px;
+  height: 36px;
   width: auto;
   display: inline-block;
   object-fit: contain;
   padding: 0;
   margin: 0;
-  max-height: 32px;
+  max-height: 40px;
 }
 
 .nav-links {
