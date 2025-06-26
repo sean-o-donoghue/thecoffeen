@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-container">
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/the_coffeen_logo.png' | relative_url }}" alt="The Coffeen logo" class="logo">
+      </a>
+    </div>
+    <h1 class="site-title">The Coffeen</h1>
+  </header>
+
+  <main class="site-content">
+    <section class="intro">
+      <h2>Welcome to The Coffeen</h2>
+      <p>A cozy blog about coffee, code, and creative thinking. From the smoothest flat whites to the harshest instant fixes, we review and muse over it all — one cup at a time.</p>
+    </section>
+
+    <section class="recent-posts">
+      <h3>Latest Brews</h3>
+      <ul>
+        {% for post in site.posts limit:3 %}
+        <li class="post-item">
+          <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+          <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
