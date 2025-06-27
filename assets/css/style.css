@@ -2,7 +2,7 @@
   background-color: #f9f5f0;
   border-bottom: 2px solid #e2c9a0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  padding: 0.5rem 2rem;
+  padding: 1.5rem 2rem;
 }
 
 .site-header .container {
@@ -22,7 +22,7 @@
 }
 
 .logo {
-  height: 48px;
+  height: 60px;
   width: auto;
   display: inline-block;
   object-fit: contain;
