@@ -1,72 +1,91 @@
-.site-header {
+/* Main content layout */
+.site-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
   background-color: #f9f5f0;
-  border-bottom: 2px solid #e2c9a0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  padding: 1.5rem 2rem;
 }
 
-.site-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* General container */
+.container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Hero section styling */
+.hero h1 {
+  font-size: 2.75rem;
+  color: #4e2e1a;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #7b6143;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #3e2c1c;
+  line-height: 1.6;
+}
+
+/* Latest posts section */
+.latest-posts {
+  margin-top: 4rem;
   width: 100%;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.logo-container {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  height: 72px;
-  width: auto;
-  display: inline-block;
-  object-fit: contain;
-}
-
-.nav-bar {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-button {
-  background-color: #a56336;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.nav-button:hover {
-  background-color: #4e2e1a;
-}
-
-.site-title {
-  flex: 1;
-  text-align: right;
+.latest-posts h2 {
   font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-  color: #5c4325;
+  color: #4e2e1a;
+  margin-bottom: 1.5rem;
+}
+
+.bean-icon {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  margin-left: 0.3rem;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
   margin: 0;
+}
+
+.post-item {
+  margin-bottom: 2.5rem;
+  text-align: left;
+  background-color: #fff6ed;
+  border: 1px solid #e2c9a0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.post-item h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+  color: #4e2e1a;
+}
+
+.post-item h3::before {
+  content: "☕ ";
+  font-size: 1.2rem;
+}
+
+.post-item small {
+  color: #7b6143;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.post-item p {
+  margin: 0;
+  color: #3e2c1c;
 }
